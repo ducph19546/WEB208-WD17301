@@ -1,0 +1,5 @@
+<form (ngSubmit)="onHandleSubmit()">
+    <input type="text" name="name" [(ngModel)]="product.name">
+    <input type="text" min="0" name="number" [(ngModel)]="product.price">
+    <button type="submit">Add</button>
+</form>

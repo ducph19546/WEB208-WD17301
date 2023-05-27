@@ -1,0 +1,11 @@
+<form class="form" (ngSubmit)="onHandleSubmit()">
+    <div class="form-control">
+        <p>Name</p>
+        <input type="text" name="name" [(ngModel)]="product.name">
+    </div>
+    <div class="form-control">
+        <p>Price</p>
+        <input type="number" min="0" name="price" [(ngModel)]="product.price">
+    </div>
+    <button>Update</button>
+</form>

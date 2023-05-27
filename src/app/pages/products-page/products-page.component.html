@@ -1,0 +1,24 @@
+<a routerLink="/products/add">Add new product</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products; index as i">
+            <td>{{ i +1 }}</td>
+            <td> <a routerLink="/products/{{product.id}}">{{product.name}}</a></td>
+            <td>{{product.price}}</td>
+            <td>{{product.description}}</td>
+            <td>
+                <button (click)="removeItem(product.id)">Remove</button>
+                <a routerLink="/products/{{product.id}}/update"><button>Update</button></a>
+            </td>
+        </tr>
+    </tbody>
+</table>

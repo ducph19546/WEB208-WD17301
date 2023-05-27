@@ -1,5 +1,28 @@
 {
-    "products":[
-        {"id":1,"name":"pro 1"}
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "pro 1 update",
+      "price": 100,
+      "description": "null"
+    },
+    {
+      "id": 2,
+      "name": "pro 2",
+      "price": 100,
+      "description": "null"
+    },
+    {
+      "id": 3,
+      "name": "pro 3",
+      "price": 100,
+      "description": "null"
+    },
+    {
+      "id": 4,
+      "name": "pro 4 ",
+      "price": 100,
+      "description": "null"
+    }
+  ]
 }
